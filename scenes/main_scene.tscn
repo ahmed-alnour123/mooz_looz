@@ -1,0 +1,252 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0sjjofxyy3bj"]
+
+[ext_resource type="Script" path="res://scenes/main_game.gd" id="1_0pnpc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6ktx0"]
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_6lfvv"]
+font_size = 121
+font_color = Color(0.819608, 0.827451, 0, 1)
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_0pnpc")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Players" type="Control" parent="UI"]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Player0" type="Control" parent="UI/Players"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -417.0
+offset_top = -181.0
+offset_right = 417.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Cards" type="HBoxContainer" parent="UI/Players/Player0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 2
+
+[node name="0" type="Label" parent="UI/Players/Player0/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="Label" parent="UI/Players/Player0/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="Label" parent="UI/Players/Player0/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3" type="Label" parent="UI/Players/Player0/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player1" type="Control" parent="UI/Players"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -231.5
+offset_bottom = 231.5
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Cards" type="VBoxContainer" parent="UI/Players/Player1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="0" type="Label" parent="UI/Players/Player1/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="Label" parent="UI/Players/Player1/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="Label" parent="UI/Players/Player1/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3" type="Label" parent="UI/Players/Player1/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player2" type="Control" parent="UI/Players"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -417.0
+offset_right = 417.0
+offset_bottom = 181.0
+grow_horizontal = 2
+
+[node name="Cards" type="HBoxContainer" parent="UI/Players/Player2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 2
+
+[node name="0" type="Label" parent="UI/Players/Player2/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="Label" parent="UI/Players/Player2/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="Label" parent="UI/Players/Player2/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3" type="Label" parent="UI/Players/Player2/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player3" type="Control" parent="UI/Players"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -231.5
+offset_right = 280.0
+offset_bottom = 231.5
+grow_vertical = 2
+
+[node name="Cards" type="VBoxContainer" parent="UI/Players/Player3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="0" type="Label" parent="UI/Players/Player3/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1" type="Label" parent="UI/Players/Player3/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="Label" parent="UI/Players/Player3/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3" type="Label" parent="UI/Players/Player3/Cards"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Apple"
+label_settings = SubResource("LabelSettings_6ktx0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="UI"]
+offset_left = 617.0
+offset_top = 482.0
+offset_right = 1378.0
+offset_bottom = 651.0
+size_flags_horizontal = 4
+label_settings = SubResource("LabelSettings_6lfvv")
+horizontal_alignment = 1
+vertical_alignment = 1
