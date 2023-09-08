@@ -1,4 +1,9 @@
-[gd_scene format=3 uid="uid://d2rg6w0vup6ws"]
+[gd_scene load_steps=5 format=3 uid="uid://d2rg6w0vup6ws"]
+
+[ext_resource type="Texture2D" uid="uid://b2x3imj1eaplc" path="res://ui/art/character_select/back_button.png" id="1_3npaf"]
+[ext_resource type="Texture2D" uid="uid://sxr6mcj6aoxu" path="res://ui/art/main_menu/main_menu_background.png" id="1_pdb8x"]
+[ext_resource type="PackedScene" uid="uid://dnm0pfa30gvoj" path="res://ui/common/money_bar.tscn" id="3_f2l4g"]
+[ext_resource type="PackedScene" uid="uid://cjmoeedeij3lg" path="res://ui/character_circle.tscn" id="4_qwm32"]
 
 [node name="CharacterSelect" type="Control"]
 layout_mode = 3
@@ -7,3 +12,95 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_pdb8x")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+offset_left = 77.0
+offset_top = 94.0
+offset_right = 326.0
+offset_bottom = 200.0
+text = "Back"
+icon = ExtResource("1_3npaf")
+flat = true
+icon_alignment = 1
+
+[node name="MoneyBar" parent="." instance=ExtResource("3_f2l4g")]
+layout_mode = 1
+
+[node name="CharacterMenu" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 131.0
+offset_top = -746.0
+offset_right = -131.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/h_separation = 45
+theme_override_constants/v_separation = 40
+columns = 6
+
+[node name="CharacterCircle1" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle2" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle3" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle4" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle5" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle6" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle7" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle8" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle9" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle10" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle11" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle12" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle13" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle14" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle15" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle16" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle17" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2
+
+[node name="CharacterCircle18" parent="CharacterMenu" instance=ExtResource("4_qwm32")]
+layout_mode = 2

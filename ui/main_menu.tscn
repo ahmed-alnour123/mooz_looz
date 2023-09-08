@@ -4,7 +4,7 @@
 [ext_resource type="Theme" uid="uid://cvv73y18b1fxv" path="res://ui/theme.tres" id="1_kdp38"]
 [ext_resource type="Texture2D" uid="uid://cyrukvsaf7eai" path="res://ui/art/main_menu/stripped_button.png" id="1_n2qen"]
 [ext_resource type="Texture2D" uid="uid://cdghg5yv6y1fs" path="res://ui/art/main_menu/character.png" id="2_1egx4"]
-[ext_resource type="Texture2D" uid="uid://sxr6mcj6aoxu" path="res://ui/art/main_menu/main_menue_background.png" id="2_5rovp"]
+[ext_resource type="Texture2D" uid="uid://sxr6mcj6aoxu" path="res://ui/art/main_menu/main_menu_background.png" id="2_5rovp"]
 [ext_resource type="Texture2D" uid="uid://bubp0qjrmcv0w" path="res://ui/art/main_menu/long_normal_button.png" id="3_vqkw5"]
 
 [node name="MainMenu" type="Control"]

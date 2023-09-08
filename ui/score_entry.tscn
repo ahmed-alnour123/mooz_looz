@@ -1,0 +1,92 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfetmnb2o4rdu"]
+
+[ext_resource type="Texture2D" uid="uid://dtgn4ffj1qcks" path="res://ui/art/score_screen/score_character_background.png" id="1_xwtfe"]
+[ext_resource type="Texture2D" uid="uid://cum0wtuv75cvj" path="res://ui/fruit_characters/black.png" id="2_h53n8"]
+[ext_resource type="Texture2D" uid="uid://bpu1ak7gy5rpd" path="res://ui/art/score_screen/score_bar.png" id="3_43oux"]
+
+[node name="ScoreEntry" type="Control"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 3
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -85.0
+offset_right = -747.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="Background" type="TextureRect" parent="."]
+self_modulate = Color(0.780392, 0.192157, 0.427451, 1)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -50.0
+offset_right = 100.0
+offset_bottom = 50.0
+grow_vertical = 2
+texture = ExtResource("1_xwtfe")
+
+[node name="Character" type="TextureRect" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_h53n8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BarBackground" type="TextureRect" parent="."]
+self_modulate = Color(0.780392, 0.192157, 0.427451, 0.501961)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 88.0
+offset_top = -34.5
+offset_right = 1142.0
+offset_bottom = 34.5
+grow_vertical = 2
+texture = ExtResource("3_43oux")
+
+[node name="Score" type="Label" parent="BarBackground"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -22.0
+offset_right = 23.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "80"
+
+[node name="tmpcolor" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -111.0
+offset_top = 104.0
+offset_right = -71.0
+offset_bottom = 144.0
+color = Color(0.262745, 0.0784314, 0.482353, 1)
+
+[node name="tmpcolor2" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -107.0
+offset_top = 48.0
+offset_right = -67.0
+offset_bottom = 88.0
+color = Color(0.262745, 0.0784314, 0.482353, 0.498039)
