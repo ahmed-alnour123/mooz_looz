@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c0sjjofxyy3bj"]
 
-[ext_resource type="Script" path="res://scenes/main_game.gd" id="1_0pnpc"]
+[ext_resource type="Script" path="res://scenes/main_game.gd" id="1_m8v87"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_6ktx0"]
 font_size = 50
@@ -9,8 +9,8 @@ font_size = 50
 font_size = 121
 font_color = Color(0.819608, 0.827451, 0, 1)
 
-[node name="MainScene" type="Node2D"]
-script = ExtResource("1_0pnpc")
+[node name="TestMainScene" type="Node2D"]
+script = ExtResource("1_m8v87")
 
 [node name="UI" type="CanvasLayer" parent="."]
 

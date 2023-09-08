@@ -1,0 +1,10 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cvv73y18b1fxv"]
+
+[ext_resource type="FontFile" uid="uid://bwk658epep4v0" path="res://fonts/SHOWG.TTF" id="1_kytne"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m0nq2"]
+
+[resource]
+default_font = ExtResource("1_kytne")
+default_font_size = 40
+Button/styles/focus = SubResource("StyleBoxEmpty_m0nq2")

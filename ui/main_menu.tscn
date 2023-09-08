@@ -1,0 +1,146 @@
+[gd_scene load_steps=7 format=3 uid="uid://bnqwqpaik7is6"]
+
+[ext_resource type="Texture2D" uid="uid://b23pv3g27oblw" path="res://ui/art/main_menu/normal_button.png" id="1_hqsr3"]
+[ext_resource type="Theme" uid="uid://cvv73y18b1fxv" path="res://ui/theme.tres" id="1_kdp38"]
+[ext_resource type="Texture2D" uid="uid://cyrukvsaf7eai" path="res://ui/art/main_menu/stripped_button.png" id="1_n2qen"]
+[ext_resource type="Texture2D" uid="uid://cdghg5yv6y1fs" path="res://ui/art/main_menu/character.png" id="2_1egx4"]
+[ext_resource type="Texture2D" uid="uid://sxr6mcj6aoxu" path="res://ui/art/main_menu/main_menue_background.png" id="2_5rovp"]
+[ext_resource type="Texture2D" uid="uid://bubp0qjrmcv0w" path="res://ui/art/main_menu/long_normal_button.png" id="3_vqkw5"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_kdp38")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_5rovp")
+
+[node name="CharacterContainer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 322.0
+offset_top = 112.0
+offset_right = 732.0
+offset_bottom = 1002.0
+
+[node name="Profile" type="TextureRect" parent="CharacterContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -67.0
+offset_right = 67.0
+offset_bottom = 136.0
+grow_horizontal = 2
+texture = ExtResource("1_n2qen")
+
+[node name="Label" type="Label" parent="CharacterContainer/Profile"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Profile"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharacterImage" type="TextureRect" parent="CharacterContainer"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_top = -231.0
+offset_right = 0.5
+offset_bottom = 276.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1egx4")
+stretch_mode = 3
+
+[node name="Change" type="Button" parent="CharacterContainer"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -75.5
+offset_top = -63.0
+offset_right = 75.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "Change"
+icon = ExtResource("1_hqsr3")
+flat = true
+icon_alignment = 1
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -846.0
+offset_top = -250.0
+offset_right = -296.0
+offset_bottom = 250.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="PlayFriends" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Play with friends"
+icon = ExtResource("3_vqkw5")
+flat = true
+icon_alignment = 1
+
+[node name="PlayStranger" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Play with strangers"
+icon = ExtResource("3_vqkw5")
+flat = true
+icon_alignment = 1
+
+[node name="PlayComputer" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Play with computer"
+icon = ExtResource("3_vqkw5")
+flat = true
+icon_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Buttons"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Tutorial" type="Button" parent="Buttons/HBoxContainer"]
+layout_mode = 2
+text = "Tutorial"
+icon = ExtResource("1_hqsr3")
+flat = true
+icon_alignment = 1
+
+[node name="Control" type="Control" parent="Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Settings" type="Button" parent="Buttons/HBoxContainer"]
+layout_mode = 2
+text = "Settings"
+icon = ExtResource("1_hqsr3")
+flat = true
+icon_alignment = 1
