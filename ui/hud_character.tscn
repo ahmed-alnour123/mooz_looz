@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://bngxbghyc20fb"]
+
+[ext_resource type="Texture2D" uid="uid://dgwe1hpbbglba" path="res://ui/art/hud/Vector_mooz_unselected_background.png" id="1_vah8w"]
+[ext_resource type="Texture2D" uid="uid://c3xhuqq8cc5fn" path="res://ui/art/hud/Vector_mooz_selected_outline.png" id="2_l6m86"]
+[ext_resource type="Texture2D" uid="uid://c3mwakqqbu2g0" path="res://ui/art/hud/Group_mooz_character_lemon.png" id="3_3gsbm"]
+
+[node name="HudCharacter" type="Control"]
+custom_minimum_size = Vector2(157, 157)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_vah8w")
+stretch_mode = 3
+
+[node name="SelectedOutline" type="TextureRect" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_l6m86")
+stretch_mode = 3
+
+[node name="Character" type="TextureRect" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_3gsbm")
+stretch_mode = 3

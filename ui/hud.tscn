@@ -1,4 +1,13 @@
-[gd_scene format=3 uid="uid://b5chisqgnlb1h"]
+[gd_scene load_steps=9 format=3 uid="uid://b5chisqgnlb1h"]
+
+[ext_resource type="Texture2D" uid="uid://dkyye3frpq0jd" path="res://ui/art/hud/powerup_button.png" id="1_ksxc2"]
+[ext_resource type="Texture2D" uid="uid://sxr6mcj6aoxu" path="res://ui/art/main_menu/main_menu_background.png" id="1_t8xcd"]
+[ext_resource type="Texture2D" uid="uid://dm4jdf0r7aeh4" path="res://ui/art/hud/bomb_powerup.png" id="2_8k7eo"]
+[ext_resource type="Texture2D" uid="uid://dg32ayk57dn55" path="res://ui/art/hud/pause_button.png" id="2_l05hv"]
+[ext_resource type="Texture2D" uid="uid://dafrqe1dci55g" path="res://ui/art/hud/character_background.png" id="3_bv1ew"]
+[ext_resource type="Texture2D" uid="uid://dhnhfh7ipqba2" path="res://ui/art/hud/character.png" id="4_238wb"]
+[ext_resource type="Texture2D" uid="uid://c35q2ttcf2x6b" path="res://ui/art/hud/oranges.png" id="5_thrqx"]
+[ext_resource type="PackedScene" uid="uid://bngxbghyc20fb" path="res://ui/hud_character.tscn" id="6_tssvx"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -7,3 +16,142 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_t8xcd")
+
+[node name="PowerUpButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = -123.0
+offset_right = 212.0
+offset_bottom = -27.0
+grow_vertical = 0
+icon = ExtResource("1_ksxc2")
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="PowerUpButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -27.5
+offset_right = 24.5
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_8k7eo")
+
+[node name="PauseButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -147.0
+offset_top = -109.0
+offset_right = -55.0
+offset_bottom = -34.0
+grow_horizontal = 0
+grow_vertical = 0
+icon = ExtResource("2_l05hv")
+flat = true
+
+[node name="Character" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 285.0
+offset_top = -187.0
+offset_right = 442.0
+offset_bottom = -30.0
+grow_vertical = 0
+texture = ExtResource("3_bv1ew")
+
+[node name="TextureRect" type="TextureRect" parent="Character"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = -76.0
+offset_right = 62.0
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_238wb")
+
+[node name="Oranges" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -338.0
+offset_top = -109.0
+offset_right = -211.0
+offset_bottom = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("5_thrqx")
+
+[node name="OrangesLabel" type="Label" parent="Oranges"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.5
+offset_top = -22.0
+offset_right = 35.5
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OtherCharacters" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -532.5
+offset_top = 68.0
+offset_right = 532.5
+offset_bottom = 225.0
+grow_horizontal = 2
+theme_override_constants/separation = 70
+
+[node name="HudCharacter1" parent="OtherCharacters" instance=ExtResource("6_tssvx")]
+layout_mode = 2
+
+[node name="HudCharacter2" parent="OtherCharacters" instance=ExtResource("6_tssvx")]
+layout_mode = 2
+
+[node name="HudCharacter3" parent="OtherCharacters" instance=ExtResource("6_tssvx")]
+layout_mode = 2
+
+[node name="HudCharacter4" parent="OtherCharacters" instance=ExtResource("6_tssvx")]
+layout_mode = 2
+
+[node name="HudCharacter5" parent="OtherCharacters" instance=ExtResource("6_tssvx")]
+layout_mode = 2
