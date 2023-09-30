@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dnm0pfa30gvoj"]
 
-[ext_resource type="Texture2D" uid="uid://co1k50scwtgld" path="res://ui/art/character_select/jewles_panel.png" id="1_8g8h6"]
+[ext_resource type="Texture2D" uid="uid://b6uy8c2uk78vw" path="res://ui/art/character_select/jewels_panel.png" id="1_oug1u"]
 [ext_resource type="Texture2D" uid="uid://cvo6wuqg2xnn8" path="res://ui/art/character_select/lemon_panel.png" id="2_an81h"]
 
 [node name="MoneyBar" type="Control"]
@@ -23,7 +23,7 @@ offset_top = -52.0
 offset_right = 156.0
 offset_bottom = 52.0
 grow_vertical = 2
-texture = ExtResource("1_8g8h6")
+texture = ExtResource("1_oug1u")
 
 [node name="Label" type="Label" parent="Jewels"]
 layout_mode = 1
